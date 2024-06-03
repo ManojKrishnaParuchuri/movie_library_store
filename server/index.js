@@ -9,7 +9,13 @@ import playlistRoutes from './routes/playlistRoutes.js';
 
 const app = express();
 
-app.use(cors());
+app.use(cors(
+    {
+        origin: ["https://deploy-mern-frontend.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 app.use(express.json());
 
 const mongoUrl = "mongodb+srv://admin:admin@cluster0.yftugmi.mongodb.net/movie_library?retryWrites=true&w=majority";
