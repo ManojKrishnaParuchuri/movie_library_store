@@ -14,6 +14,9 @@ app.use(express.json());
 
 const mongoUrl = "mongodb+srv://admin:admin@cluster0.yftugmi.mongodb.net/movie_library?retryWrites=true&w=majority";
 
+const PORT = process.env.PORT || 4000
+
+
 app.use('/playlist', playlistRoutes);
 
 mongoose.connect(mongoUrl, {
@@ -68,6 +71,6 @@ app.post('/login', async (req, res) => {
 
 
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
