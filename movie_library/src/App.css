@@ -1,0 +1,285 @@
+
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500&family=Lora:wght@400;500&family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 2px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --text-clr: #4a5c6c;
+  --bg-clr: black;
+  --border-clr: rgb(16, 124, 219);
+}
+
+html {
+  font-size: 52.5%;
+}
+
+body {
+  background-color:black;
+}
+
+h2 {
+  font-family: "Lora", serif;
+  color:aquamarine;
+  font-size: 2rem;
+  transition: all 0.5s linear;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  min-width: 25rem;
+  max-height: 30rem;
+  margin: 1.5rem 0;
+  border-radius: 1rem;
+  transition: all 0.3s linear;
+}
+
+.container {
+  max-width: 0rem;
+  margin: auto;
+  padding: 3rem;
+  
+}
+
+.grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.grid-4-col {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.card {
+  width: 20rem;
+  max-width: 25rem;
+  min-height: 25rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-section {
+  margin: auto;
+  text-align: center;
+  margin: 7rem 0;
+  
+}
+
+form div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+input {
+  border-radius: 100px;
+  border: none;
+  border: 1px solid var(--border-clr);
+  padding: 1.3rem 10rem;
+  font-size: 1.8rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  outline: none;
+  margin-top: 2rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--border-clr);
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darken(var(--border-clr), 10%);
+}
+
+.card-error p {
+  color: red;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+
+.movie-section {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--text-clr);
+  display: grid;
+  place-items: center;
+  color: white;
+}
+
+.loading {
+  font-size: 3.2rem;
+  color: var(--text-clr);
+  text-align: center;
+}
+
+.movie-section .loading {
+  font-size: 3.2rem;
+  text-align: center;
+  color: white;
+}
+
+.movie-card {
+  min-width: 30rem;
+  width: 50vw;
+  background-color: var(--bg-clr);
+  display: grid;
+  gap: 2rem;
+  color: white;
+  grid-template-columns: 0.6fr 1fr;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 2rem;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+.movie-card img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  max-height: 50rem;
+  height: auto;
+}
+
+.movie-card .title {
+  font-size: 2.8rem;
+  color: var(--text-clr);
+  font-weight: bold;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-text {
+  font-size: 1.8rem;
+}
+
+a {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 3.2rem 1rem;
+  color: var(--text-clr);
+  border: 0.2rem solid var(--text-clr);
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s linear;
+}
+
+a:hover {
+  background-color: var(--text-clr);
+  color: var(--bg-clr);
+}
+
+a:hover h2 {
+  color: var(--bg-clr);
+  transform: translateY(-1.5rem);
+  display: inline-block;
+}
+
+a:hover img {
+  transform: scale(1.1);
+}
+
+.car{
+  display: flex;
+  gap: 10px;
+}
+
+.sinbt{
+  color: white;
+  background-color: black;
+  border-radius: 0;
+  border: 0.2rem solid var(--text-clr);
+  padding: 2rem 1rem;
+  margin-top: 10px;
+  height: 50px;
+  width: 150px;
+}
+
+.back-btn {
+  padding: 1.2rem 3.6rem;
+  
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    margin: auto;
+    max-width: 110rem;
+  }
+  .grid-4-col {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 998px) {
+  .container {
+    max-width: 90rem;
+    margin: auto;
+  }
+  .grid-4-col {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  input {
+  width: auto;
+
+  }
+
+  .movie-section {
+    height: auto;
+    padding: 4.8rem 0;
+  }
+
+  .movie-card {
+    grid-template-columns: 1fr;
+  }
+
+  .card-content {
+    padding-left: 2rem;
+    
+  }
+
+  .back-btn {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 70rem;
+    margin: auto;
+  }
+  .grid-4-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+

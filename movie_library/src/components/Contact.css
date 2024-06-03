@@ -1,0 +1,17 @@
+.contact-page {
+    margin-top: 100px;
+    text-align: center;
+  }
+  
+  .contact-links {
+    height: 100px;
+    width: 550px;
+    justify-content: center;
+    align-content: center;
+    margin-left: 400px;
+  }
+  
+  .contact-link {
+    margin: 20px;
+  }
+  
