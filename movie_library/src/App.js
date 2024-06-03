@@ -19,7 +19,6 @@ function App() {
           <Route path="/movie/:id" element={<SingleMovie />} />
           <Route path="/movie" element={<Mainpage />} />
           <Route path="/playlist" element={<Playlist />} />
-          <Route path="*" element={<Error />} />
           <Route path='/contact' element={<ContactPage />}></Route>
         </Routes>
       </AppProvider>
