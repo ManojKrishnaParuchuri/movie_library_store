@@ -22,6 +22,9 @@ const mongoUrl = "mongodb+srv://admin:admin@cluster0.yftugmi.mongodb.net/movie_l
 
 const PORT = process.env.PORT || 4000
 
+app.get("/", (req, res) => {
+    res.json("Hello");
+})
 
 app.use('/playlist', playlistRoutes);
 
