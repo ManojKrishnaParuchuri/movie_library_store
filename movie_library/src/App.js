@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <AppProvider>
         <Routes>
-          <Route path="/signup" element={<Signup />} />
+          <Route path="https://movie-librarybackend-git-master-manojs-projects-c2d85db1.vercel.app/" element={<Signup />} />
           <Route path="/home" element={<Home />} />
           <Route path="/movie/:id" element={<SingleMovie />} />
           <Route path="/movie" element={<Mainpage />} />
