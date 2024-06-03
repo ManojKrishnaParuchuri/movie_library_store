@@ -14,12 +14,12 @@ function App() {
     <div className="App">
       <AppProvider>
         <Routes>
-          <Route path="https://movie-librarybackend-qkemh5qpl-manojs-projects-c2d85db1.vercel.app/Signup" element={<Signup />} />
+          <Route path="https://movie-librarybackend-qkemh5qpl-manojs-projects-c2d85db1.vercel.app/Signup" element={<Errorpage />} />
           <Route path="/home" element={<Home />} />
           <Route path="/movie/:id" element={<SingleMovie />} />
           <Route path="/movie" element={<Mainpage />} />
           <Route path="/playlist" element={<Playlist />} />
-          <Route path="*" element={<Errorpage />} />
+          <Route path="*" element={<Signup />} />
           <Route path='/contact' element={<ContactPage />}></Route>
         </Routes>
       </AppProvider>
