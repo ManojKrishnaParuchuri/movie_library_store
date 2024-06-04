@@ -37,7 +37,7 @@ mongoose.connect(mongoUrl, {
   console.error("Failed to connect to DB", error);
 });
 
-app.post('/signup', async (req, res) => {
+app.post('/', async (req, res) => {
   const { name, mobile, email, password } = req.body;
   try {
     const newUser = new User({ name, mobile, email, password });
@@ -53,7 +53,7 @@ app.post('/signup', async (req, res) => {
 });
 
 
-app.post('/login', async (req, res) => {
+app.post('/', async (req, res) => {
   const { email, password, playlist } = req.body; 
   try {
     const user = await User.findOne({ email, password });
