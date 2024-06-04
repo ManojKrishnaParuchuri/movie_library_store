@@ -49,7 +49,7 @@ export default function Signup() {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://movie-librarybackend-manojs-projects-c2d85db1.vercel.app/signup', {
+      const response = await fetch('https://movie-library-backend-ten.vercel.app/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ export default function Signup() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3000/login', {
+      const response = await fetch('https://movie-library-backend-ten.vercel.app/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
