@@ -11,7 +11,7 @@ const app = express();
 
 app.use(cors(
     {
-        origin: ["https://deploy-mern-frontend.vercel.app"],
+        origin: ["https://manoj-moviestore-manojs-projects-c2d85db1.vercel.app/"],
         methods: ["POST", "GET"],
         credentials: true
     }
